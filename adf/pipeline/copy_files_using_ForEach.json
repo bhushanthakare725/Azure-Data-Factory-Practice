@@ -95,7 +95,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "datasetforcopymultiplefiles",
+									"referenceName": "datasetforcopyactivityusingGetmetadata",
 									"type": "DatasetReference",
 									"parameters": {
 										"file_name": {

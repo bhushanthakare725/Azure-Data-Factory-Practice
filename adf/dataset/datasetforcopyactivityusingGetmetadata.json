@@ -1,5 +1,5 @@
 {
-	"name": "datasetforcopymultiplefiles",
+	"name": "datasetforcopyactivityusingGetmetadata",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorageLS",
