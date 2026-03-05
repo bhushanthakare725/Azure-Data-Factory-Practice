@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeforonpremsql",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
