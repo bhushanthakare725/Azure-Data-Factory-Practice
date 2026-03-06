@@ -2,7 +2,7 @@
 	"name": "ds_adls_sink_for_singleFile",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorageLS",
+			"referenceName": "teststorage1accountLS",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -19,7 +19,7 @@
 					"value": "@dataset().folder_name",
 					"type": "Expression"
 				},
-				"fileSystem": "watermarkforsingletable"
+				"fileSystem": "input"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
