@@ -105,7 +105,8 @@
 										"folder_name": {
 											"value": "@item().table_name",
 											"type": "Expression"
-										}
+										},
+										"container": "wrongdata"
 									}
 								}
 							]
