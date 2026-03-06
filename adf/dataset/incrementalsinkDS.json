@@ -6,7 +6,10 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"FileName": {
+			"folder": {
+				"type": "string"
+			},
+			"file_name": {
 				"type": "string"
 			}
 		},
@@ -15,8 +18,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().file_name",
+					"type": "Expression"
+				},
 				"folderPath": {
-					"value": "@dataset().FileName",
+					"value": "@dataset().folder",
 					"type": "Expression"
 				},
 				"fileSystem": "watermarkfolder"
