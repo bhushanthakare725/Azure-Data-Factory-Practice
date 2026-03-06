@@ -19,7 +19,7 @@
 					"value": "@dataset().folder_name",
 					"type": "Expression"
 				},
-				"fileSystem": "input"
+				"fileSystem": "singlefilewataermarkdata"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
