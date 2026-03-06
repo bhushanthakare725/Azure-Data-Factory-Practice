@@ -1,5 +1,5 @@
 {
-	"name": "dynamic_incremental_loading",
+	"name": "samefiles_parallelWrites",
 	"properties": {
 		"activities": [
 			{
@@ -99,10 +99,10 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "incrementalsinkDS",
+									"referenceName": "ds_adls_sink_for_singleFile",
 									"type": "DatasetReference",
 									"parameters": {
-										"FileName": {
+										"folder_name": {
 											"value": "@item().table_name",
 											"type": "Expression"
 										}
@@ -206,7 +206,7 @@
 			}
 		],
 		"folder": {
-			"name": "incremental_load"
+			"name": "errors"
 		},
 		"annotations": [],
 		"lastPublishTime": "2026-03-05T19:11:43Z"
