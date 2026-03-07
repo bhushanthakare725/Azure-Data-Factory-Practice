@@ -1,5 +1,5 @@
 {
-	"name": "trigger3",
+	"name": "storagetrigger",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
@@ -13,7 +13,8 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/incomingfiles/blobs/",
+			"blobPathBeginsWith": "/incomingfiles/blobs/c",
+			"blobPathEndsWith": ".csv",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/f38e8667-257b-4692-bef0-014babf0a087/resourceGroups/adeprojects/providers/Microsoft.Storage/storageAccounts/teststorage1acc",
 			"events": [
