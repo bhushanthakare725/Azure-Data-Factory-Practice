@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adeproject1df"
+		},
+		"AzureDataLakeStorageLS_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDBNewLS_password": {
+			"value": ""
+		},
+		"AzureSqlDatabaseLS_password": {
+			"value": ""
+		},
+		"teststorage1accountLS_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorageLS_properties_typeProperties_url": {
+			"value": "https://adeprojectstorage.dfs.core.windows.net/"
+		},
+		"AzureSqlDBNewLS_properties_typeProperties_server": {
+			"value": "adeprojectdbserver.database.windows.net"
+		},
+		"AzureSqlDBNewLS_properties_typeProperties_database": {
+			"value": "AdventureWorksLT2025"
+		},
+		"AzureSqlDBNewLS_properties_typeProperties_userName": {
+			"value": "azuredbuser"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_server": {
+			"value": "adeprojectdbserver.database.windows.net"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_database": {
+			"value": "adeprojectazuresqldb"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_userName": {
+			"value": "azuredbuser"
+		},
+		"teststorage1accountLS_properties_typeProperties_url": {
+			"value": "https://teststorage1acc.dfs.core.windows.net/"
+		}
+	}
+}
