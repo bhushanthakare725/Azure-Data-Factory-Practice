@@ -74,8 +74,7 @@
 								"sink": {
 									"type": "DelimitedTextSink",
 									"storeSettings": {
-										"type": "AzureBlobFSWriteSettings",
-										"copyBehavior": "MergeFiles"
+										"type": "AzureBlobFSWriteSettings"
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
@@ -109,7 +108,7 @@
 											"type": "Expression"
 										},
 										"file_name": {
-											"value": "@concat(item().table_name,'_',formatDateTime(utcnow(),'yyyyMMdd'),'.csv')",
+											"value": "@concat(item().table_name,'_',formatDateTime(utcnow(),'yyyyMMddHHmmss'),'.csv')",
 											"type": "Expression"
 										}
 									}
