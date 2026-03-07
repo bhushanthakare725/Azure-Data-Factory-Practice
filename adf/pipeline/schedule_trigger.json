@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "schedule_trigger",
 	"properties": {
 		"activities": [
 			{
@@ -52,7 +52,7 @@
 						"referenceName": "teststorage2DS",
 						"type": "DatasetReference",
 						"parameters": {
-							"file_NAME": "customers.csv"
+							"file_NAME": "customer.csv"
 						}
 					}
 				],
