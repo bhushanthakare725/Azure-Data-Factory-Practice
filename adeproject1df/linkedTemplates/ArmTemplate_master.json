@@ -55,7 +55,7 @@
 			"type": "string",
 			"defaultValue": "https://teststorage1acc.dfs.core.windows.net/"
 		},
-		"trigger3_properties_typeProperties_scope": {
+		"storagetrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f38e8667-257b-4692-bef0-014babf0a087/resourceGroups/adeprojects/providers/Microsoft.Storage/storageAccounts/teststorage1acc"
 		},
@@ -140,8 +140,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"trigger3_properties_typeProperties_scope": {
-						"value": "[parameters('trigger3_properties_typeProperties_scope')]"
+					"storagetrigger_properties_typeProperties_scope": {
+						"value": "[parameters('storagetrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

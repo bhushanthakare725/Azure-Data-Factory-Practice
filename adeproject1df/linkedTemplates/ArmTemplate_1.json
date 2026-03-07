@@ -7,7 +7,7 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adeproject1df"
 		},
-		"trigger3_properties_typeProperties_scope": {
+		"storagetrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f38e8667-257b-4692-bef0-014babf0a087/resourceGroups/adeprojects/providers/Microsoft.Storage/storageAccounts/teststorage1acc"
 		}
@@ -1172,7 +1172,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger3')]",
+			"name": "[concat(parameters('factoryName'), '/storagetrigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -1189,9 +1189,10 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/incomingfiles/blobs/",
+					"blobPathBeginsWith": "/incomingfiles/blobs/c",
+					"blobPathEndsWith": ".csv",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('trigger3_properties_typeProperties_scope')]",
+					"scope": "[parameters('storagetrigger_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]

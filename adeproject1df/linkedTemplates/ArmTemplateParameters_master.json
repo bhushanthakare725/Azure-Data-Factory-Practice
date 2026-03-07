@@ -41,7 +41,7 @@
 		"teststorage1accountLS_properties_typeProperties_url": {
 			"value": "https://teststorage1acc.dfs.core.windows.net/"
 		},
-		"trigger3_properties_typeProperties_scope": {
+		"storagetrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/f38e8667-257b-4692-bef0-014babf0a087/resourceGroups/adeprojects/providers/Microsoft.Storage/storageAccounts/teststorage1acc"
 		},
 		"containerUri": {
