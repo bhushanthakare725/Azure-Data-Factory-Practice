@@ -1,8 +1,8 @@
 {
-	"name": "adeprojectstorageDS",
+	"name": "sinkdatasetforflattendata",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorageLS",
+			"referenceName": "teststorage1accountLS",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "watermarkfolder"
+				"fileSystem": "sinkflattened"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
@@ -18,6 +18,5 @@
 			"quoteChar": "\""
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
