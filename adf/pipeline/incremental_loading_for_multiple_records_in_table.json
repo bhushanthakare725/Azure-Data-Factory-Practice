@@ -148,7 +148,7 @@
 						},
 						{
 							"name": "Script1",
-							"description": "it will update the watermark control table with same record due to ",
+							"description": "",
 							"type": "Script",
 							"dependsOn": [
 								{
