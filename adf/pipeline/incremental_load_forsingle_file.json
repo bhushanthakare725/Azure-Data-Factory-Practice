@@ -99,7 +99,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "ds_adls_sink_for_singleFile",
+									"referenceName": "DSteststorage1_adls_sink_for_singleFile",
 									"type": "DatasetReference",
 									"parameters": {
 										"folder_name": {

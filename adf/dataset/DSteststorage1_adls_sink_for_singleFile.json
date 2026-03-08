@@ -1,5 +1,5 @@
 {
-	"name": "ds_adls_sink_for_singleFile",
+	"name": "DSteststorage1_adls_sink_for_singleFile",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "teststorage1accountLS",

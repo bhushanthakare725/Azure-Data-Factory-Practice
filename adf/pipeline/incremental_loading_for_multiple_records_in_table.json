@@ -1,5 +1,5 @@
 {
-	"name": "samefiles_parallelWrites",
+	"name": "incremental_loading_for_multiple_records_in_table",
 	"properties": {
 		"activities": [
 			{
@@ -99,14 +99,14 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "ds_adls_sink_for_singleFile",
+									"referenceName": "DSteststorage1_adls_sink_for_singleFile",
 									"type": "DatasetReference",
 									"parameters": {
 										"folder_name": {
 											"value": "@item().table_name",
 											"type": "Expression"
 										},
-										"container": "wrongdata"
+										"container": "incrementaldata"
 									}
 								}
 							]
@@ -148,6 +148,7 @@
 						},
 						{
 							"name": "Script1",
+							"description": "it will update the watermark control table with same record due to ",
 							"type": "Script",
 							"dependsOn": [
 								{
@@ -194,7 +195,7 @@
 										],
 										"type": "Query",
 										"text": {
-											"value": "update  dbo.ADF_Watermark_Control\nset last_watermark_value = @watermark_value,\nupdated_at=getdate(),\ntable_name=@table_n\n",
+											"value": "update  dbo.ADF_Watermark_Control\nset last_watermark_value = @watermark_value,\nupdated_at=getdate()\nwhere table_name=@table_n\n",
 											"type": "Expression"
 										}
 									}
@@ -207,7 +208,7 @@
 			}
 		],
 		"folder": {
-			"name": "errors"
+			"name": "incremental_load"
 		},
 		"annotations": [],
 		"lastPublishTime": "2026-03-05T19:11:43Z"
