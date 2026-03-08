@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_c35",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "teststorage1accountLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "copydatatool"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
