@@ -5,6 +5,9 @@
 			"referenceName": "AzureDataLakeStorageLS",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "copy data tool datasets"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
