@@ -1,0 +1,19 @@
+{
+	"name": "MetadataDrivenCopyTask_uow_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDBNewLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_uow_20260312"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo.meta",
+			"table": "MainControlTable_uow"
+		}
+	}
+}
