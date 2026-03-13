@@ -1,0 +1,25 @@
+{
+	"name": "Trigger_9ks",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "MetadataDrivenCopyTask_9ks_TopLevel",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 23,
+				"startTime": "2026-03-13T12:30:00Z",
+				"endTime": "2026-03-13T12:49:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
