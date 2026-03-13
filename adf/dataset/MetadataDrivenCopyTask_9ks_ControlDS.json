@@ -1,0 +1,19 @@
+{
+	"name": "MetadataDrivenCopyTask_9ks_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDBNewLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_9ks_20260313"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo.meta",
+			"table": "MainControlTable_9ks"
+		}
+	}
+}
